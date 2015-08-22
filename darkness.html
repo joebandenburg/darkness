@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Darkness</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  <div class="mdl-layout mdl-js-layout mdl-color--grey-0 mdl-layout--fixed-header">
+    <div class="mdl-layout__content">
+      <form action="#" autocomplete="off" id="form">
+        <div class="darkness-container-grid mdl-grid">
+          <div class="darkness-flex darkness-flex-center mdl-cell mdl-cell--12-col">
+            <div class="darkness-logo mdl-color--primary mdl-color-text--grey-50">D</div>
+          </div>
+          <div class="mdl-cell mdl-cell--12-col">
+              <div class="mdl-textfield mdl-js-textfield">
+                <input class="mdl-textfield__input" type="password" id="key" autofocus minlength=1 />
+                <label class="mdl-textfield__label" for="key">Password</label>
+              </div>
+              <div class="mdl-textfield mdl-js-textfield">
+                <input class="mdl-textfield__input" type="password" id="salt" minlength=1 />
+                <label class="mdl-textfield__label" for="salt">Salt</label>
+              </div>
+          </div>
+          <div class="darkness-flex mdl-cell mdl-cell--12-col">
+            <div class="mdl-layout-spacer"></div>
+            <button class="mdl-button mdl-js-button mdl-button--accent" id="generate">
+              Generate
+            </button>
+          </div>
+          <div class="mdl-cell mdl-cell--12-col">
+            <div class="darkness-result mdl-typography--title" id="result"></div>
+          </div>
+          <div class="mdl-cell mdl-cell--12-col">
+            <div class="mdl-spinner mdl-js-spinner" id="spinner"></div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <script src="darkness.min.js"></script>
+</body>
+</html>
