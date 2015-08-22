@@ -2,8 +2,9 @@ var path = require("path");
 var webpack = require("webpack");
 
 module.exports = {
+  target: "node",
   entry: {
-    main: path.join(__dirname, "darkness.js"),
+    darkness: path.join(__dirname, "darkness.js"),
     bookmarklet: path.join(__dirname, "bookmarklet.js")
   },
   output: {
