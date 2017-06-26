@@ -1,6 +1,6 @@
-const origin = "https://bandenburg.com";
+//const origin = "https://bandenburg.com";
 //const origin = "http://localhost:8080";
-//const origin = "https://bandenburg-backup.s3.amazonaws.com";
+const origin = "https://bandenburg-backup.s3.amazonaws.com";
 
 (() => {
   const activeElement = document.activeElement;

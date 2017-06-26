@@ -12,30 +12,35 @@
     <div class="mdl-layout__content">
       <form action="#" autocomplete="off" id="form">
         <div class="darkness-container-grid mdl-grid">
-          <div class="darkness-flex darkness-flex-center mdl-cell mdl-cell--12-col">
-            <div class="darkness-logo mdl-color--primary mdl-color-text--grey-50">D</div>
-          </div>
-          <div class="mdl-cell mdl-cell--12-col">
-              <div class="mdl-textfield mdl-js-textfield">
-                <input class="mdl-textfield__input" type="password" id="key" autofocus minlength=1 />
-                <label class="mdl-textfield__label" for="key">Password</label>
+          <div class="card mdl-card mdl-shadow--2dp">
+            <div class="mdl-card__title">
+              <h2 class="mdl-card__title-text">Darkness</h2>
+            </div>
+            <div class="mdl-card__supporting-text">
+              <div class="mdl-cell mdl-cell--12-col">
+                  <div class="mdl-textfield mdl-js-textfield">
+                    <input class="mdl-textfield__input" type="password" id="key" autofocus minlength=1 />
+                    <label class="mdl-textfield__label" for="key">Password</label>
+                  </div>
+                  <div class="mdl-textfield">Fingerprint: <span id="fingerprint"></span></div>
+                  <div class="mdl-textfield mdl-js-textfield">
+                    <input class="mdl-textfield__input" type="password" id="salt" minlength=1 />
+                    <label class="mdl-textfield__label" for="salt">Salt</label>
+                  </div>
               </div>
-              <div class="mdl-textfield mdl-js-textfield">
-                <input class="mdl-textfield__input" type="password" id="salt" minlength=1 />
-                <label class="mdl-textfield__label" for="salt">Salt</label>
+              <div class="darkness-flex mdl-cell mdl-cell--12-col">
+                <div class="mdl-layout-spacer"></div>
+                <button class="mdl-button mdl-js-button mdl-button--accent" id="generate">
+                  Generate
+                </button>
               </div>
-          </div>
-          <div class="darkness-flex mdl-cell mdl-cell--12-col">
-            <div class="mdl-layout-spacer"></div>
-            <button class="mdl-button mdl-js-button mdl-button--accent" id="generate">
-              Generate
-            </button>
-          </div>
-          <div class="mdl-cell mdl-cell--12-col">
-            <div class="darkness-result mdl-typography--title" id="result"></div>
-          </div>
-          <div class="mdl-cell mdl-cell--12-col">
-            <div class="mdl-spinner mdl-js-spinner" id="spinner"></div>
+              <div class="mdl-cell mdl-cell--12-col">
+                <div class="darkness-result mdl-typography--title hidden" id="result"></div>
+              </div>
+              <div class="mdl-cell mdl-cell--12-col">
+                <div class="mdl-spinner mdl-js-spinner hidden" id="spinner"></div>
+              </div>
+            </div>
           </div>
         </div>
       </form>
